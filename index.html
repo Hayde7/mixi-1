@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestro Primer Mes - Gonza & Mixi ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#ffd1ff);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    font-size:4rem;
+    text-shadow:0 0 15px rgba(255,255,255,.8);
+}
+
+h2{
+    font-size:2.3rem;
+    margin-bottom:20px;
+}
+
+p{
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.subtitle{
+    margin-top:20px;
+    font-size:1.5rem;
+}
+
+.heart{
+    position:fixed;
+    color:red;
+    animation:float 8s linear infinite;
+    z-index:-1;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+.card{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:35px;
+    margin-top:30px;
+    box-shadow:0 0 25px rgba(0,0,0,.15);
+}
+
+.timeline{
+    border-left:4px solid white;
+    padding-left:25px;
+}
+
+.timeline div{
+    margin-bottom:30px;
+}
+
+.counter{
+    font-size:2rem;
+    text-align:center;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+.reasons{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.reason{
+    background:rgba(255,255,255,.15);
+    padding:15px;
+    border-radius:15px;
+}
+
+button{
+    background:white;
+    color:#ff4f8b;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:1rem;
+    margin-top:20px;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+#secret{
+    display:none;
+    margin-top:25px;
+    font-size:1.2rem;
+}
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.quote{
+    font-size:1.3rem;
+    font-style:italic;
+    text-align:center;
+    margin:20px 0;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>❤️ Gonza & Mixi ❤️</h1>
+    <p class="subtitle">
+        Celebrando nuestro primer mes juntos
+    </p>
+
+    <div class="counter" id="contador"></div>
+</header>
+
+<section>
+    <div class="card">
+        <h2>💌 Para Mixi</h2>
+
+        <p>
+            Mi querida Mixi:
+        </p>
+
+        <br>
+
+        <p>
+            Hoy quiero dedicarte esta página porque, aunque haya pasado
+            relativamente poco tiempo, has conseguido convertirte en una
+            de las personas más importantes de mi vida.
+        </p>
+
+        <br>
+
+        <p>
+            Quizás no recuerde exactamente cómo nos conocimos, ni el lugar,
+            ni el momento exacto en que todo comenzó. Pero sí recuerdo algo
+            mucho más importante: cómo me haces sentir.
+        </p>
+
+        <br>
+
+        <p>
+            Desde que llegaste a mi vida, cada conversación tiene más valor,
+            cada día tiene algo que esperar y cada noche tiene una razón para
+            sonreír.
+        </p>
+
+        <br>
+
+        <p>
+            Aunque nuestra relación sea a distancia y virtual, los sentimientos
+            que tengo por ti son completamente reales.
+            No necesito tenerte enfrente para saber lo especial que eres.
+            No necesito verte todos los días para pensar en ti.
+            No necesito tocar tu mano para sentir que formas parte de mi corazón.
+        </p>
+
+        <br>
+
+        <p>
+            Este primer mes es solo el comienzo de una historia que espero
+            seguir escribiendo contigo durante mucho tiempo.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>⏳ Nuestro Primer Mes</h2>
+
+        <div class="timeline">
+
+            <div>
+                <h3>🌸 Inicio</h3>
+                <p>
+                    Dos personas comenzaron a hablar y poco a poco
+                    construyeron algo especial.
+                </p>
+            </div>
+
+            <div>
+                <h3>💬 Conversaciones</h3>
+                <p>
+                    Mensajes que empezaron siendo simples palabras
+                    terminaron convirtiéndose en momentos importantes.
+                </p>
+            </div>
+
+            <div>
+                <h3>❤️ Sentimientos</h3>
+                <p>
+                    Día tras día, el cariño fue creciendo hasta convertirse
+                    en algo imposible de ignorar.
+                </p>
+            </div>
+
+            <div>
+                <h3>🎉 Primer Mes</h3>
+                <p>
+                    Hoy celebramos nuestro primer mes juntos,
+                    el primero de muchos más.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>🌹 50 Razones Por Las Que Te Amo</h2>
+
+        <div class="reasons">
+
+            <div class="reason">1. Porque me haces feliz.</div>
+            <div class="reason">2. Porque siempre pienso en ti.</div>
+            <div class="reason">3. Porque tus mensajes alegran mi día.</div>
+            <div class="reason">4. Porque eres especial.</div>
+            <div class="reason">5. Porque me haces sonreír.</div>
+            <div class="reason">6. Porque eres única.</div>
+            <div class="reason">7. Porque me entiendes.</div>
+            <div class="reason">8. Porque me acompañas.</div>
+            <div class="reason">9. Porque me importas muchísimo.</div>
+            <div class="reason">10. Porque haces mis días mejores.</div>
+            <div class="reason">11. Porque eres adorable.</div>
+            <div class="reason">12. Porque me inspiras.</div>
+            <div class="reason">13. Porque eres dulce.</div>
+            <div class="reason">14. Porque me escuchas.</div>
+            <div class="reason">15. Porque confío en ti.</div>
+            <div class="reason">16. Porque me haces sentir querido.</div>
+            <div class="reason">17. Porque eres increíble.</div>
+            <div class="reason">18. Porque me importan tus emociones.</div>
+            <div class="reason">19. Porque me gusta hablar contigo.</div>
+            <div class="reason">20. Porque pienso en nuestro futuro.</div>
+            <div class="reason">21. Porque eres parte de mi vida.</div>
+            <div class="reason">22. Porque me haces sentir afortunado.</div>
+            <div class="reason">23. Porque me haces reír.</div>
+            <div class="reason">24. Porque me apoyas.</div>
+            <div class="reason">25. Porque me importas más de lo que imaginas.</div>
+            <div class="reason">26. Porque eres mi persona favorita.</div>
+            <div class="reason">27. Porque contigo todo es mejor.</div>
+            <div class="reason">28. Porque me haces sentir en paz.</div>
+            <div class="reason">29. Porque eres hermosa.</div>
+            <div class="reason">30. Porque me haces sentir especial.</div>
+            <div class="reason">31. Porque eres auténtica.</div>
+            <div class="reason">32. Porque me encanta hablar contigo.</div>
+            <div class="reason">33. Porque haces que valga la pena esperar.</div>
+            <div class="reason">34. Porque me emocionas.</div>
+            <div class="reason">35. Porque apareces en mis pensamientos.</div>
+            <div class="reason">36. Porque eres maravillosa.</div>
+            <div class="reason">37. Porque me haces creer en el amor.</div>
+            <div class="reason">38. Porque me importan tus sueños.</div>
+            <div class="reason">39. Porque eres mi alegría.</div>
+            <div class="reason">40. Porque me gusta tu forma de ser.</div>
+            <div class="reason">41. Porque eres importante para mí.</div>
+            <div class="reason">42. Porque eres inolvidable.</div>
+            <div class="reason">43. Porque me haces sentir vivo.</div>
+            <div class="reason">44. Porque me encanta conocerte cada día más.</div>
+            <div class="reason">45. Porque eres una luz en mi vida.</div>
+            <div class="reason">46. Porque eres tú.</div>
+            <div class="reason">47. Porque me haces querer ser mejor.</div>
+            <div class="reason">48. Porque me enamoras todos los días.</div>
+            <div class="reason">49. Porque mi corazón te eligió.</div>
+            <div class="reason">50. Porque te amo infinitamente.</div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>✨ Nuestros Sueños</h2>
+
+        <p>
+            Sueño con seguir compartiendo momentos contigo.
+            Sueño con más conversaciones, más risas,
+            más recuerdos y más aniversarios.
+        </p>
+
+        <br>
+
+        <p>
+            No sé exactamente qué nos deparará el futuro,
+            pero sí sé que quiero seguir caminando a tu lado,
+            apoyándote, escuchándote y queriéndote.
+        </p>
+
+        <br>
+
+        <p>
+            Porque si este primer mes fue tan bonito,
+            imagina todo lo que todavía nos queda por vivir.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <h2>❤️ Algunas Frases Para Ti</h2>
+
+        <div class="quote">
+            "La distancia mide kilómetros, no sentimientos."
+        </div>
+
+        <div class="quote">
+            "Mi lugar favorito siempre será donde estés tú."
+        </div>
+
+        <div class="quote">
+            "Cada día contigo es un regalo."
+        </div>
+
+        <div class="quote">
+            "Te amo más de lo que las palabras pueden explicar."
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="card" style="text-align:center;">
+        <h2>🎁 Mensaje Sorpresa</h2>
+
+        <p>
+            Haz clic para descubrir lo que más quiero decirte.
+        </p>
+
+        <button onclick="mostrarMensaje()">
+            Abrir mi corazón ❤️
+        </button>
+
+        <div id="secret">
+            Mixi, gracias por este primer mes.
+            Gracias por cada mensaje, cada sonrisa,
+            cada momento compartido.
+            Eres una persona increíble y espero
+            seguir celebrando muchos aniversarios más contigo.
+            ❤️ Te amo muchísimo ❤️
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h2>💖 Feliz Primer Mes, Mixi 💖</h2>
+    <p>
+        Con todo mi amor,
+        <br><br>
+        Gonza ❤️
+    </p>
+</footer>
+
+<script>
+
+function mostrarMensaje(){
+    document.getElementById("secret").style.display="block";
+}
+
+function crearCorazon(){
+    const heart=document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="❤";
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(Math.random()*20+15)+"px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },8000);
+}
+
+setInterval(crearCorazon,250);
+
+const inicio = new Date("2026-05-24T00:00:00");
+
+function actualizarContador(){
+
+    const ahora = new Date();
+    const diferencia = ahora - inicio;
+
+    const dias = Math.floor(diferencia / (1000*60*60*24));
+    const horas = Math.floor((diferencia/(1000*60*60))%24);
+    const minutos = Math.floor((diferencia/(1000*60))%60);
+
+    document.getElementById("contador").innerHTML =
+    `❤️ Han pasado ${dias} días, ${horas} horas y ${minutos} minutos desde el 24 de mayo ❤️`;
+}
+
+setInterval(actualizarContador,1000);
+actualizarContador();
+
+</script>
+
+</body>
+</html>
